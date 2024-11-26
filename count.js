@@ -9,6 +9,7 @@ let count=0;
 incrementButton.addEventListener('click',function(){
     if (count===10){
         alert('no more count');
+        return;
     } else {
         count=count+1;
         counterId.innerText=count;
@@ -18,6 +19,7 @@ incrementButton.addEventListener('click',function(){
 decrementButton.addEventListener('click', function(){
     if (count===0){
         alert('the result is negative');
+     
     } else{
         
             count=count-1;
